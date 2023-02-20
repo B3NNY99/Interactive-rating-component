@@ -1,0 +1,129 @@
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: hsl(217, 12%, 63%);
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.star {
+    background-color: hsl(213, 19%, 18%);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.rating {
+    background-color: hsl(214, 20%, 14%);
+    padding: 1.8rem;
+    margin: 0 1rem;
+    border-radius: 20px;
+}
+
+.rates {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 7%;
+    margin: 2rem 0;
+}
+
+.rate {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    font-weight: bold;
+    border: 0;
+    border-radius: 50%;
+    padding: 33% 0;
+}
+
+.clicked {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+#submit {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    width: 100%;
+    padding: 1.2rem 0;
+    border: 0;
+    border-radius: 30px;
+}
+
+#submit:active {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+#submit:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+/*  Thank you state start    */
+
+.thanks {
+    display: none;
+    margin: 0 1rem;
+    padding: 2.5rem 1.8rem 1.8rem 1.8rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: hsl(214, 20%, 14%);
+}
+
+.selected {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    width: max-content;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.attribution {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+
+    color: hsl(228, 45%, 44%);
+}
+
+
+
+@media(min-width:540px) {
+
+    .rating {
+        max-width: 25rem;
+    }
+
+    .hoover-rate:hover {
+        background-color: hsl(216, 12%, 54%);
+        color: white;
+    }
+
+    .thanks {
+        max-width: 25rem;
+    }
+
+
+}
